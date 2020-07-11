@@ -1,12 +1,12 @@
 .sidebar {
+  background-color: #0f2850;
   width: 250px;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   padding: 15px;
-  transition: 0.5s;
-  background-color: #eee; }
+  transition: 0.5s; }
   .sidebar.no-sidebar {
     left: -250px; }
 
@@ -26,12 +26,16 @@ body {
     float: right;
     min-height: 100%;
     transition: 0.5s;
-    will-change: width; }
+    will-change: width;
+    background-color: #f4f4f8; }
     .page .content-area.no-sidebar {
       width: 100%; }
 
-.toggle-sidebar {
-  cursor: pointer;
-  margin: 10px; }
+header {
+  background-color: #fff;
+  padding: 15px; }
+  header .toggle-sidebar {
+    cursor: pointer;
+    margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */

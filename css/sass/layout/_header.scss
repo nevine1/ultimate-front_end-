@@ -1,4 +1,8 @@
-.toggle-sidebar {
-  cursor: pointer;
-  margin: 10px;
+header {
+  background-color: $color1;
+  padding: 15px;
+  .toggle-sidebar {
+    cursor: pointer;
+    margin: 10px;
+  }
 }
