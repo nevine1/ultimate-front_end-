@@ -1,8 +1,75 @@
 header {
   background-color: $color1;
-  padding: 15px;
+  padding: 20px;
   .toggle-sidebar {
     cursor: pointer;
     margin: 10px;
+  }
+  .notifiction-container {
+    display: inline-block;
+    margin-left: 20px;
+    .toggle-notification {
+      background-color: #f9f9f9;
+      color: #555;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .notification-menu {
+      min-width: 400px;
+      padding: 0;
+      border: none;
+      margin-top: 8px;
+      box-shadow: 0 0 10px #ddd;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 8px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #444 transparent;
+      }
+      .noti-head {
+        background-color: #444;
+        padding: 10px;
+        color: #fff;
+        .noti-num {
+          float: right;
+        }
+      }
+      .noti-content {
+        padding: 10px;
+        ul {
+          li {
+            padding-bottom: 8px;
+            &:last-of-type {
+              padding-bottom: 0;
+            }
+            i {
+              margin-right: 10px;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              background-color: #eaeaea;
+              line-height: 35px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .noti-footer {
+        border-top: 1px solid #eaeaea;
+        a {
+          display: block;
+          margin-top: 1px;
+          padding: 4px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }

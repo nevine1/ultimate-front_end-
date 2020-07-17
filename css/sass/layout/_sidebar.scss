@@ -11,4 +11,85 @@
   &.no-sidebar {
     left: -250px;
   }
+  .logo-area {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .links-area {
+    // all links
+    li {
+      a {
+        color: green;
+        font-size: 16px;
+        padding: 10px 20px;
+        display: block;
+        transition: 0.4s;
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+    //direct links
+    > li > a {
+      position: relative;
+      padding-left: 20px;
+      color: #fff;
+      .fa-chevron-right {
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+        top: 2px;
+        left: 10px;
+        transition: 0.5s;
+        &.down {
+          transform: rotate(90deg);
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        padding-left: 25px;
+      }
+    }
+    .child-links {
+      position: relative;
+      left: 3px;
+      display: none;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #666;
+      }
+
+      a {
+        position: relative;
+        &:hover::before {
+          position: absolute;
+          content: "";
+          width: 3px;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+        }
+      }
+    }
+  }
 }
