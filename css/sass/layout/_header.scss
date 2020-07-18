@@ -3,7 +3,12 @@ header {
   padding: 20px;
   .toggle-sidebar {
     cursor: pointer;
-    margin: 10px;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
   }
   .notifiction-container {
     display: inline-block;
@@ -43,7 +48,7 @@ header {
         ul {
           li {
             padding-bottom: 8px;
-            &:last-of-type {
+            &:last-child {
               padding-bottom: 0;
             }
             i {
@@ -71,5 +76,14 @@ header {
         }
       }
     }
+  }
+
+  .toggle-fullscreen {
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
   }
 }

@@ -97,7 +97,12 @@ header {
   padding: 20px; }
   header .toggle-sidebar {
     cursor: pointer;
-    margin: 10px; }
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer; }
   header .notifiction-container {
     display: inline-block;
     margin-left: 20px; }
@@ -131,7 +136,7 @@ header {
         padding: 10px; }
         header .notifiction-container .notification-menu .noti-content ul li {
           padding-bottom: 8px; }
-          header .notifiction-container .notification-menu .noti-content ul li:last-of-type {
+          header .notifiction-container .notification-menu .noti-content ul li:last-child {
             padding-bottom: 0; }
           header .notifiction-container .notification-menu .noti-content ul li i {
             margin-right: 10px;
@@ -149,5 +154,12 @@ header {
           padding: 4px; }
           header .notifiction-container .notification-menu .noti-footer a:hover {
             text-decoration: none; }
+  header .toggle-fullscreen {
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
