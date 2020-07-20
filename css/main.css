@@ -161,5 +161,59 @@ header {
     border-radius: 50%;
     cursor: pointer;
     margin-left: 20px; }
+  header .username-container {
+    display: inline-block; }
+    header .username-container .username {
+      cursor: pointer; }
+      header .username-container .username .avatar {
+        width: 30px;
+        height: 30px; }
+      header .username-container .username .user {
+        font-weight: bold;
+        color: #666;
+        margin-left: 10px;
+        margin-right: 10px; }
+    header .username-container .user-menu {
+      min-width: 400px;
+      padding-left: 15px;
+      border: none;
+      margin-top: 8px;
+      box-shadow: 0 0 5px #ddd;
+      border: 1px solid #eee; }
+      header .username-container .user-menu:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 25px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #999 transparent; }
+      header .username-container .user-menu .user-info h4 {
+        color: #0f2850;
+        font-weight: bold;
+        font-size: 20px; }
+      header .username-container .user-menu .user-info p {
+        color: #555;
+        margin: 0; }
+      header .username-container .user-menu .activities-list li {
+        padding: 5px; }
+      header .username-container .user-menu .usermenu-links {
+        padding-bottom: 5px; }
+        header .username-container .user-menu .usermenu-links a {
+          font-size: 14px;
+          background-color: #f3f3f3;
+          padding: 6px 10px;
+          border-radius: 5px;
+          color: #333; }
+          header .username-container .user-menu .usermenu-links a .link-box {
+            margin-right: 5px; }
+            header .username-container .user-menu .usermenu-links a .link-box.fa-user {
+              color: lightseagreen; }
+            header .username-container .user-menu .usermenu-links a .link-box.fa-power-off {
+              color: red; }
+            header .username-container .user-menu .usermenu-links a .link-box.fa-gear {
+              color: green; }
+          header .username-container .user-menu .usermenu-links a:hover {
+            text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -86,4 +86,78 @@ header {
     cursor: pointer;
     margin-left: 20px;
   }
+  .username-container {
+    display: inline-block;
+    .username {
+      cursor: pointer;
+      .avatar {
+        width: 30px;
+        height: 30px;
+      }
+      .user {
+        font-weight: bold;
+        color: #666;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .user-menu {
+      min-width: 400px;
+      padding-left: 15px;
+      border: none;
+      margin-top: 8px;
+      box-shadow: 0 0 5px #ddd;
+      border: 1px solid #eee;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 25px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #999 transparent;
+      }
+      .user-info {
+        h4 {
+          color: $color2;
+          font-weight: bold;
+          font-size: 20px;
+        }
+        p {
+          color: #555;
+          margin: 0;
+        }
+      }
+      .activities-list {
+        li {
+          padding: 5px;
+        }
+      }
+      .usermenu-links {
+        padding-bottom: 5px;
+        a {
+          font-size: 14px;
+          background-color: #f3f3f3;
+          padding: 6px 10px;
+          border-radius: 5px;
+          color: #333;
+          .link-box {
+            margin-right: 5px;
+            &.fa-user {
+              color: lightseagreen;
+            }
+            &.fa-power-off {
+              color: red;
+            }
+            &.fa-gear {
+              color: green;
+            }
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
