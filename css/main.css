@@ -1,3 +1,29 @@
+.setting_box {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  background-color: lightblue;
+  z-index: 100;
+  padding: 20px;
+  transition: all 0.5s; }
+  .setting_box.hide_setting {
+    right: 0; }
+  .setting_box .toggle_setting {
+    position: absolute;
+    left: -36px;
+    top: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer; }
+    .setting_box .toggle_setting i {
+      padding: 7px 11px;
+      font-size: 20px; }
+  .setting_box .setting-content .option-box h4 {
+    font-size: 15px;
+    color: #0f2850; }
+
 .sidebar {
   background-color: #0f2850;
   width: 250px;

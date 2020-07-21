@@ -1,0 +1,14 @@
+.setting_box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: lightblue;
+  z-index: 100;
+  padding: 20px;
+}
+
+.setting_box .setting-content .option-bo h4 {
+  font-size: 17px;
+}

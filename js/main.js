@@ -24,6 +24,15 @@ $(function () {
       closeFullscreen();
     }
   });
+
+  //hide and show toggle-setting
+  $(".toggle_setting").on("click", function () {
+    //add  class fa-spin to make the grear rotating when clicking on the i icon
+    $(this).find("i").toggleClass("fa-spin");
+    //$(".setting_box").toggleClass("hide_setting");
+    //or use this code
+    $(this).parent().toggleClass("hide_setting");
+  });
 });
 
 var elem = document.documentElement;
