@@ -1,3 +1,12 @@
+.green-theme .classname {
+  color: #27ae60; }
+
+.blue-theme .classname {
+  color: #2980b9; }
+
+.red-theme .classname {
+  color: #c0392b; }
+
 .setting_box {
   position: fixed;
   top: 0;
@@ -12,7 +21,7 @@
     right: 0; }
   .setting_box .toggle_setting {
     position: absolute;
-    left: -36px;
+    left: -37px;
     top: 100px;
     background-color: #fff;
     border-radius: 4px;
