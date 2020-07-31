@@ -7,6 +7,27 @@
 .red-theme .classname {
   color: #c0392b; }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-size: 17px; }
+
+.page {
+  min-height: 100vh; }
+  .page .content-area {
+    width: calc(100% - 250px);
+    float: right;
+    min-height: 100%;
+    transition: 0.5s;
+    will-change: width;
+    background-color: #f4f4f8; }
+    .page .content-area.no-sidebar {
+      width: 100%; }
+
 .setting_box {
   position: fixed;
   top: 0;
@@ -61,16 +82,18 @@
   .sidebar .links-area > li > a {
     position: relative;
     padding-left: 20px;
-    color: #fff; }
-    .sidebar .links-area > li > a .fa-chevron-right {
+    color: #fff;
+    /*  .toggle-submenu {
       color: #fff;
-      font-size: 12px;
+      font-size: 10px;
       position: relative;
       top: 2px;
       left: 10px;
-      transition: 0.5s; }
-      .sidebar .links-area > li > a .fa-chevron-right.down {
-        transform: rotate(90deg); }
+      transition: 0.6s;
+      &.down {
+        transform: rotate(90deg);
+      }
+    }*/ }
     .sidebar .links-area > li > a::before {
       content: "";
       position: absolute;
@@ -83,9 +106,15 @@
       transform: translateY(-50%); }
     .sidebar .links-area > li > a:hover {
       padding-left: 25px; }
+    .sidebar .links-area > li > a .fa-chevron-right {
+      color: #fff;
+      font-size: 10px;
+      position: relative;
+      top: 2px;
+      left: 10px;
+      transition: 0.6s; }
   .sidebar .links-area .child-links {
-    position: relative;
-    left: 3px;
+    left: 2px;
     display: none; }
     .sidebar .links-area .child-links::before {
       content: "";
@@ -93,7 +122,7 @@
       width: 3px;
       height: 100%;
       top: 0;
-      left: 0;
+      left: 2px;
       background-color: #666; }
     .sidebar .links-area .child-links a {
       position: relative; }
@@ -103,29 +132,8 @@
         width: 3px;
         height: 100%;
         top: 0;
-        left: 0;
+        left: 2px;
         background-color: #fff; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #fff;
-  font-size: 17px; }
-
-.page {
-  min-height: 100vh; }
-  .page .content-area {
-    width: calc(100% - 250px);
-    float: right;
-    min-height: 100%;
-    transition: 0.5s;
-    will-change: width;
-    background-color: #f4f4f8; }
-    .page .content-area.no-sidebar {
-      width: 100%; }
 
 header {
   background-color: #fff;
